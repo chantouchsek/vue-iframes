@@ -5,7 +5,7 @@ const version = require('../package.json').version
 
 const banner =
   '/*!\n' +
-  ' * vue-friendly-iframe v' + version + ' (https://github.com/officert/vue-friendly-iframe)\n' +
+  ' * vue-iframe v' + version + ' (https://github.com/Chantouch/vue-iframe)\n' +
   ' * (c) ' + new Date().getFullYear() + ' Tim Officer\n' +
   ' * Released under the MIT License.\n' +
   ' */';
