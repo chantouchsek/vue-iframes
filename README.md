@@ -25,9 +25,9 @@ npm install vue-iframe --save-dev
 ```
 
 ```javascript
-import VueFriendlyIframe from 'vue-iframe';
+import VueIframe from 'vue-iframe';
 
-Vue.component('vue-iframe', VueFriendlyIframe);
+Vue.component('vue-iframe', VueIframe);
 ```
 
 ### Contributing
