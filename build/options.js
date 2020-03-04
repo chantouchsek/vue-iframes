@@ -6,7 +6,7 @@ const { version, name, author } = require('../package.json')
 const banner =
   '/*!\n' +
   ' * '+ name +' v' + version + ' (https://github.com/Chantouch/vue-iframe)\n' +
-  ' * (c) ' + new Date().getFullYear() + author + '\n' +
+  ' * (c) ' + new Date().getFullYear() + ' ' + author + '\n' +
   ' * Released under the MIT License.\n' +
   ' */';
 

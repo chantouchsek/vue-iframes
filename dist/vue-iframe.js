@@ -1,6 +1,6 @@
 /*!
- * vue-iframes v0.0.1-beta-4 (https://github.com/Chantouch/vue-iframe)
- * (c) 2020Chantouch Sek
+ * vue-iframes v0.0.1-beta-5 (https://github.com/Chantouch/vue-iframe)
+ * (c) 2020 Chantouch Sek
  * Released under the MIT License.
  */
 (function webpackUniversalModuleDefinition(root, factory) {
