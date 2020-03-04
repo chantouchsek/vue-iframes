@@ -1,12 +1,12 @@
 'use strict'
 
 const path = require('path')
-const version = require('../package.json').version
+const { version, name, author } = require('../package.json')
 
 const banner =
   '/*!\n' +
-  ' * vue-iframe v' + version + ' (https://github.com/Chantouch/vue-iframe)\n' +
-  ' * (c) ' + new Date().getFullYear() + ' Tim Officer\n' +
+  ' * '+ name +' v' + version + ' (https://github.com/Chantouch/vue-iframe)\n' +
+  ' * (c) ' + new Date().getFullYear() + author + '\n' +
   ' * Released under the MIT License.\n' +
   ' */';
 
@@ -24,7 +24,7 @@ module.exports = {
       main: path.join(__dirname, '..', 'dist'),
       docs: path.join(__dirname, '..', 'docs')
     },
-    resolve(location) {
+    resolve (location) {
       return path.join(__dirname, '..', location);
     }
   }

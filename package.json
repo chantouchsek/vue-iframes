@@ -1,6 +1,6 @@
 {
   "name": "vue-iframes",
-  "version": "0.0.1-beta-3",
+  "version": "0.0.1-beta-4",
   "description": "Vue component for creating dynamic async iframes",
   "main": "dist/vue-iframe.js",
   "scripts": {
@@ -24,7 +24,7 @@
     "vuejs",
     "components"
   ],
-  "author": "Tim Officer",
+  "author": "Chantouch Sek",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Chantouch/vue-iframe/issues"
