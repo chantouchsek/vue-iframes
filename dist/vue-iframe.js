@@ -1,5 +1,5 @@
 /*!
- * vue-friendly-iframe v0.0.1 (https://github.com/officert/vue-friendly-iframe)
+ * vue-iframe v0.0.1-beta-2 (https://github.com/Chantouch/vue-iframe)
  * (c) 2020 Tim Officer
  * Released under the MIT License.
  */
