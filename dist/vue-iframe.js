@@ -1,5 +1,5 @@
 /*!
- * vue-iframes v0.0.1-beta-5 (https://github.com/Chantouch/vue-iframe)
+ * vue-iframes v0.0.1-beta-10 (https://github.com/Chantouch/vue-iframe)
  * (c) 2020 Chantouch Sek
  * Released under the MIT License.
  */
@@ -255,7 +255,7 @@ var content = __webpack_require__(6);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(8)("bf01335a", content, true, {});
+var update = __webpack_require__(8)("c1b63bde", content, true, {});
 
 /***/ }),
 /* 6 */
@@ -714,19 +714,18 @@ exports.default = {
     },
     allow: {
       type: String,
-      required: false
+      required: false,
+      default: 'camera *; geolocation *; microphone *; autoplay *'
     },
     name: {
       type: String,
-      required: false
+      required: false,
+      default: 'vue-iframes'
     },
     frameId: {
       type: String,
-      required: true
-    },
-    gesture: {
-      type: String,
-      default: 'media'
+      required: false,
+      default: 'vue-iframes'
     }
   },
   data: function data() {
@@ -758,7 +757,6 @@ exports.default = {
       this.iframeEl.setAttribute('style', 'visibility: hidden; position: absolute; top: -99999px; border: none;');
       this.iframeEl.setAttribute('id', this.frameId);
       this.iframeEl.setAttribute('frameborder', 0);
-      this.iframeEl.setAttribute('gesture', this.gesture);
       this.iframeEl.setAttribute('id', this.frameId);
       if (this.src) this.iframeEl.setAttribute('iframe-src', this.src);
       if (this.className) this.iframeEl.setAttribute('class', this.className);
