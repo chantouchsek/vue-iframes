@@ -1,6 +1,6 @@
 {
   "name": "vue-iframes",
-  "version": "0.0.1-beta-5",
+  "version": "0.0.1-beta-7",
   "description": "Vue component for creating dynamic async iframes",
   "main": "dist/vue-iframe.js",
   "scripts": {

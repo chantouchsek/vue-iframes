@@ -27,19 +27,18 @@
       },
       allow: {
         type: String,
-        required: false
+        required: false,
+        default: 'autoplay'
       },
       name: {
         type: String,
-        required: false
+        required: false,
+        default: 'vue-iframes'
       },
       frameId: {
         type: String,
-        required: true
-      },
-      gesture: {
-        type: String,
-        default: 'media'
+        required: false,
+        default: 'vue-iframes'
       }
     },
     data () {
@@ -81,7 +80,6 @@
         this.iframeEl.setAttribute('style', 'visibility: hidden; position: absolute; top: -99999px; border: none;');
         this.iframeEl.setAttribute('id', this.frameId)
         this.iframeEl.setAttribute('frameborder', 0)
-        this.iframeEl.setAttribute('gesture', this.gesture)
         this.iframeEl.setAttribute('id', this.frameId)
         if (this.src) this.iframeEl.setAttribute('iframe-src', this.src);
         if (this.className) this.iframeEl.setAttribute('class', this.className);
