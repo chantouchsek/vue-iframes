@@ -40,7 +40,7 @@ Vue.use(VueIframe)
 ```
 
 ## Components
-```vuejs
+```js
 <template>
   <vue-iframe
     :src="src"
