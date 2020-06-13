@@ -9,8 +9,6 @@
 ## Requirements
 * [Vue.js](http://vuejs.org/) (^v2.1.4)
 
-## Installation
-
 ## Vue Support
 
 Supports on Vue >= 2
