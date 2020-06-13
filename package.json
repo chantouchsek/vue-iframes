@@ -1,6 +1,6 @@
 {
   "name": "vue-iframes",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Vue component for creating dynamic async iframes",
   "main": "dist/vue-iframe.js",
   "scripts": {
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Chantouch/vue-iframe.git"
+    "url": "git+https://github.com/Chantouch/vue-iframes.git"
   },
   "keywords": [
     "iframe",
@@ -27,9 +27,9 @@
   "author": "Chantouch Sek",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Chantouch/vue-iframe/issues"
+    "url": "https://github.com/Chantouch/vue-iframes/issues"
   },
-  "homepage": "https://github.com/Chantouch/vue-iframe#readme",
+  "homepage": "https://github.com/Chantouch/vue-iframes#readme",
   "dependencies": {
     "uuid": "7.0.1"
   },
