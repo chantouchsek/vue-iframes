@@ -37,6 +37,16 @@ import VueIframe from 'vue-iframes'
 Vue.use(VueIframe)
 ```
 
+```bash
+nuxt.config.js
+
+plugins: [
+    .....
+    { src: '~/plugins/vue-iframes', mode: 'client' },
+    .....
+]
+```
+
 ## Components
 ```js
 <template>
