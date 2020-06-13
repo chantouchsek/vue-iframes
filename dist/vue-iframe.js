@@ -1,5 +1,5 @@
 /*!
- * vue-iframes v0.0.1-beta-10 (https://github.com/Chantouch/vue-iframe)
+ * vue-iframes v0.0.2 (https://github.com/Chantouch/vue-iframe)
  * (c) 2020 Chantouch Sek
  * Released under the MIT License.
  */
