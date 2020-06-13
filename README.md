@@ -22,19 +22,21 @@ npm install vue-iframes --save-dev
 ```
 
 ```javascript
-import VueIframe from 'vue-iframes';
+import Vue from 'vue'
+import VueIframe from 'vue-iframes'
 
-Vue.component('vue-iframes', VueIframe);
+Vue.use(VueIframe)
 ```
 
 ## Nuxt Support
---
+---
 - Create `~/plugins/vue-iframes.js`
 
 ```js
-import VueIframe from 'vue-iframes';
+import Vue from 'vue'
+import VueIframe from 'vue-iframes'
 
-Vue.component('vue-iframes', VueIframe);
+Vue.use(VueIframe)
 ```
 
 ## Components
