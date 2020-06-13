@@ -28,7 +28,7 @@
       allow: {
         type: String,
         required: false,
-        default: 'autoplay'
+        default: 'camera *; geolocation *; microphone *; autoplay *'
       },
       name: {
         type: String,

@@ -68,6 +68,29 @@ export default {
 </script>
 ```
 
+## Props
+
+Prop                  | Description            |    Required        | Default
+----------------------| ---------------------- | ------------------ | -----------
+**src**               | The iframe resource    | true
+**crossorigin**       | Cross origin           | false              | anonymous
+**target**            | Target of iframe       | false              | _parent
+**className**         | Iframe's class         | false              | null
+**allow**             | Iframe's allow         | false              | 'camera *; geolocation *; microphone *; autoplay *'
+**name**              | Iframe's name          | false              | 'vue-iframes'
+**frame-id**          | Iframe's id            | false              | 'vue-iframes'
+
+## Events
+
+Name                  | Description            
+----------------------| ---------------------- 
+**iframe-load**       | When the iframe is loaded    
+**load**              | When the iframe is ready    
+
 ### Contributing
 
 Pull requests are welcome, or open up an issue if you have ideas for additional functionality, new features or bugs.
+
+# Contact
+
+Twitter [@DevidCs83](https://twitter.com/DevidCs83)
