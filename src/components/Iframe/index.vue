@@ -30,6 +30,11 @@
         required: false,
         default: 'camera *; geolocation *; microphone *; autoplay *'
       },
+      allowFullScreen : {
+        type: String,
+        required: false,
+        default: 'allowfullscreen'
+      },
       name: {
         type: String,
         required: false,
@@ -87,7 +92,8 @@
         if (this.crossorigin) this.iframeEl.setAttribute('crossorigin', this.crossorigin);
         if (this.target) this.iframeEl.setAttribute('target', this.target);
         if (this.allow) this.iframeEl.setAttribute('allow', this.allow);
-        if (this.name) this.iframeEl.setAttribute('name', this.name);
+if (this.allowFullScreen) this.iframeEl.setAttribute('allowfullscreen', this.allowFullScreen);
+       if (this.name) this.iframeEl.setAttribute('name', this.name);
         this.$el.appendChild(this.iframeEl);
         this.setIframeUrl();
       },
