@@ -71,9 +71,9 @@
           );
         iframeDoc.close(); //iframe onload event happens
       },
-      reinitIframe: debounce(vm => {
-        vm.removeIframe();
-        vm.initIframe();
+      reinitIframe: debounce(function () {
+        this.removeIframe();
+        this.initIframe();
       }, 200),
       initIframe () {
         this.iframeEl = document.createElement('iframe');

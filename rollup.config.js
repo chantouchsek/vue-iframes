@@ -1,5 +1,4 @@
 import vue from 'rollup-plugin-vue'
-import less from 'rollup-plugin-less';
 
 export default [
   // ESM build to be used with webpack/rollup.
@@ -11,8 +10,7 @@ export default [
     },
     external: ['lodash.debounce', 'uuid', 'vue'],
     plugins: [
-      vue(),
-      less({ insert: true, output: false })
+      vue()
     ]
   },
   // SSR build.
@@ -23,8 +21,7 @@ export default [
       file: 'dist/vue-iframes.ssr.js'
     },
     plugins: [
-      vue({ template: { optimizeSSR: true } }),
-      less({ insert: true, output: false })
+      vue({ template: { optimizeSSR: true } })
     ]
   },
   // Browser build.
@@ -35,8 +32,7 @@ export default [
       file: 'dist/vue-iframes.js'
     },
     plugins: [
-      vue(),
-      less({ insert: true, output: false })
+      vue()
     ]
   }
 ]
