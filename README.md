@@ -107,6 +107,9 @@ Prop                  | Description            |    Required        | Default
 **allow**             | Iframe's allow         | false              | 'camera *; geolocation *; microphone *; autoplay *'
 **name**              | Iframe's name          | false              | 'vue-iframes'
 **frame-id**          | Iframe's id            | false              | 'vue-iframes'
+**scrolling**         | Set scrolling to iframe| false              | null
+**width**             | Set width to iframe    | false              | null
+**height**            | Set height to iframe   | false              | null
 
 ## Events
 

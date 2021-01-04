@@ -40,7 +40,9 @@
         required: false,
         default: 'vue-iframes'
       },
-      scrolling: String
+      scrolling: String,
+      width: [String, Number],
+      height: [String, Number]
     },
     data () {
       return {
@@ -90,6 +92,8 @@
         if (this.allow) this.iframeEl.setAttribute('allow', this.allow);
         if (this.name) this.iframeEl.setAttribute('name', this.name);
         if (this.scrolling) this.iframeEl.setAttribute('scrolling', this.scrolling);
+        if (this.width) this.iframeEl.setAttribute('width', this.width);
+        if (this.height) this.iframeEl.setAttribute('height', this.height);
         this.$el.appendChild(this.iframeEl);
         this.setIframeUrl();
       },
@@ -116,7 +120,7 @@
     },
     watch: {
       src () {
-        this.reinitIframe(this);
+        this.reinitIframe();
       }
     }
   };
