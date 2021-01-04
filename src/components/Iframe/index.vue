@@ -4,7 +4,7 @@
 
 <script>
   import { v4 as uuidV4 } from 'uuid';
-  import utils from 'src/utils/utils';
+  import { debounce } from 'src/utils';
   const generateGuid = () => uuidV4()
   export default {
     name: 'VueIframe',
@@ -43,7 +43,7 @@
     },
     data () {
       return {
-        iframeEl: null,
+        iframeEl: {},
         iframeLoadedMessage: `IFRAME_LOADED_${generateGuid()}`,
         iframeOnReadyStateChangeMessage: `IFRAME_ON_READ_STATE_CHANGE_${generateGuid()}`
       };
@@ -71,7 +71,7 @@
           );
         iframeDoc.close(); //iframe onload event happens
       },
-      reinitIframe: utils.debounce(vm => {
+      reinitIframe: debounce(vm => {
         vm.removeIframe();
         vm.initIframe();
       }, 200),
