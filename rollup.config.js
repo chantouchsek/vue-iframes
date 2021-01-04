@@ -9,7 +9,7 @@ export default [
       format: 'esm',
       file: 'dist/vue-iframes.esm.js'
     },
-    external: ['lodash.debounce'],
+    external: ['lodash.debounce', 'uuid', 'vue'],
     plugins: [
       vue(),
       less({ insert: true, output: false })
