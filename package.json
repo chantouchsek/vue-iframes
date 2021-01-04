@@ -1,6 +1,6 @@
 {
   "name": "vue-iframes",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Vue component for creating dynamic async iframes",
   "main": "dist/vue-iframes.js",
   "scripts": {
@@ -31,6 +31,7 @@
   },
   "homepage": "https://github.com/Chantouch/vue-iframes#readme",
   "dependencies": {
+    "lodash.debounce": "^4.0.8",
     "uuid": "7.0.1"
   },
   "peerDependecies": {

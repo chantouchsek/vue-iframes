@@ -4,7 +4,7 @@
 
 <script>
   import { v4 as uuidV4 } from 'uuid';
-  import { debounce } from 'src/utils';
+  import debounce from 'lodash.debounce';
   const generateGuid = () => uuidV4()
   export default {
     name: 'VueIframe',
