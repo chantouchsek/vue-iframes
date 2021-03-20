@@ -1,8 +1,9 @@
 {
   "name": "vue-iframes",
-  "version": "0.0.13",
+  "version": "0.0.15",
   "description": "Vue component for creating dynamic async iframes",
   "main": "dist/vue-iframes.js",
+  "files": ["dist", "README.md"],
   "scripts": {
     "dev": "NODE_ENV=development webpack-dev-server --config ./build/webpack.dev.js --open --inline --hot",
     "build:debug": "NODE_ENV=debug webpack --config build/webpack.dist.js",
