@@ -18,36 +18,57 @@ Supports on Vue >= 2
 ```npm
 npm install vue-iframes
 ```
+
 ```yarn
-yarn add vue-iframes
+yar add vue-iframes
 ```
 
 ```javascript
 import Vue from 'vue'
 import VueIframe from 'vue-iframes'
 
-Vue.use(VueIframe, {/* rest of options */})
+Vue.use(VueIframe)
 ```
 
-## ♻️ Usage with Nuxt.js
-
-Add `vue-iframes/nuxt` to modules section of `nuxt.config.js`
+## Nuxt Support
+---
+- Create `~/plugins/vue-iframes.js`
 
 ```js
-export default {
-    modules: [
-        // Simple usage
-        'vue-iframes/nuxt',
-        // Passing options in module configuration
-        ['vue-iframes/nuxt', {/* rest of options */}]
-    ],
-    // Passing options in module top level configuration
-    vueIframes: {/* rest of options */}
-}
+import Vue from 'vue'
+import VueIframe from 'vue-iframes'
+
+Vue.use(VueIframe)
+```
+
+## Nuxt SSR
+```js
+import Vue from 'vue'
+import VueIframe from 'vue-iframes/dist/vue-iframes.ssr'
+
+Vue.use(VueIframe)
+
+# nuxt.config.js
+
+plugins: [
+    .....
+    { src: '~/plugins/vue-iframes' },
+    .....
+]
+```
+
+```bash
+nuxt.config.js
+
+plugins: [
+    .....
+    { src: '~/plugins/vue-iframes', mode: 'client' },
+    .....
+]
 ```
 
 ## Components
-```js
+```vue
 <template>
   <vue-iframe
     :src="src"
@@ -86,6 +107,9 @@ Prop                  | Description            |    Required        | Default
 **allow**             | Iframe's allow         | false              | 'camera *; geolocation *; microphone *; autoplay *'
 **name**              | Iframe's name          | false              | 'vue-iframes'
 **frame-id**          | Iframe's id            | false              | 'vue-iframes'
+**scrolling**         | Set scrolling to iframe| false              | null
+**width**             | Set width to iframe    | false              | null
+**height**            | Set height to iframe   | false              | null
 
 ## Events
 

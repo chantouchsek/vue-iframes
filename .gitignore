@@ -21,3 +21,4 @@ package-lock.json
 *.njsproj
 *.sln
 *.sw*
+dist
