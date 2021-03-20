@@ -15,36 +15,35 @@ Supports on Vue >= 2
 
 ## Installation and Usage
 
-```javascript
-npm install vue-iframes --save-dev
+```npm
+npm install vue-iframes
+```
+```yarn
+yarn vue-iframes
 ```
 
 ```javascript
 import Vue from 'vue'
 import VueIframe from 'vue-iframes'
 
-Vue.use(VueIframe)
+Vue.use(VueIframe, {/* rest of options */})
 ```
 
-## Nuxt Support
----
-- Create `~/plugins/vue-iframes.js`
+## ♻️ Usage with Nuxt.js
+
+Add `vue-iframes/nuxt` to modules section of `nuxt.config.js`
 
 ```js
-import Vue from 'vue'
-import VueIframe from 'vue-iframes'
-
-Vue.use(VueIframe)
-```
-
-```bash
-nuxt.config.js
-
-plugins: [
-    .....
-    { src: '~/plugins/vue-iframes', mode: 'client' },
-    .....
-]
+export default {
+    modules: [
+        // Simple usage
+        'vue-iframes/nuxt',
+        // Passing options in module configuration
+        ['vue-iframes/nuxt', {/* rest of options */}]
+    ],
+    // Passing options in module top level configuration
+    vueIframes: {/* rest of options */}
+}
 ```
 
 ## Components

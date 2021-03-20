@@ -1,6 +1,6 @@
 /*!
  * vue-iframes v0.0.4 (https://github.com/Chantouch/vue-iframe)
- * (c) 2020 Chantouch Sek
+ * (c) 2021 Chantouch Sek
  * Released under the MIT License.
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -208,16 +208,17 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 if (typeof window !== 'undefined' && window.Vue) {
   window.Vue.use({
-    install: function install(NewVue) {
-      NewVue.component('vue-iframe', _Iframe2.default);
+    install: function install(Vue) {
+      Vue.component('vue-iframe', _Iframe2.default);
     }
   });
 }
 
 exports.default = {
-  install: function install(NewVue) {
-    NewVue.component('vue-iframe', _Iframe2.default);
+  install: function install(Vue) {
+    Vue.component('vue-iframe', _Iframe2.default);
   },
+
   VueIframe: _Iframe2.default
 };
 module.exports = exports['default'];
@@ -255,7 +256,7 @@ var content = __webpack_require__(6);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(8)("c1b63bde", content, true, {});
+var update = __webpack_require__(8)("243a20b6", content, true, {});
 
 /***/ }),
 /* 6 */
@@ -717,6 +718,11 @@ exports.default = {
       required: false,
       default: 'camera *; geolocation *; microphone *; autoplay *'
     },
+    allowFullScreen: {
+      type: String,
+      required: false,
+      default: 'allowfullscreen'
+    },
     name: {
       type: String,
       required: false,
@@ -744,7 +750,7 @@ exports.default = {
     },
     setIframeUrl: function setIframeUrl() {
       var iframeDoc = this.iframeEl.contentWindow.document;
-      iframeDoc.open().write('\n        <body onload="window.location.href=\'' + this.src + '\'; parent.postMessage(\'' + this.iframeLoadedMessage + '\', \'*\')"></body>\n        <script>\n          window.document.onreadystatechange = function () {\n            if (window.document.readyState === \'complete\') {\n              parent.postMessage(\'' + this.iframeOnReadyStateChangeMessage + '\', \'*\')\n            }\n          };\n        </script>\n        ');
+      iframeDoc.open().write('\n          <body onload="window.location.href=\'' + this.src + '\'; parent.postMessage(\'' + this.iframeLoadedMessage + '\', \'*\')"></body>\n          <script>\n            window.document.onreadystatechange = function () {\n              if (window.document.readyState === \'complete\') {\n                parent.postMessage(\'' + this.iframeOnReadyStateChangeMessage + '\', \'*\')\n              }\n            };\n          </script>\n          ');
       iframeDoc.close();
     },
 
@@ -764,6 +770,7 @@ exports.default = {
       if (this.crossorigin) this.iframeEl.setAttribute('crossorigin', this.crossorigin);
       if (this.target) this.iframeEl.setAttribute('target', this.target);
       if (this.allow) this.iframeEl.setAttribute('allow', this.allow);
+      if (this.allowFullScreen) this.iframeEl.setAttribute('allowfullscreen', this.allowFullScreen);
       if (this.name) this.iframeEl.setAttribute('name', this.name);
       this.$el.appendChild(this.iframeEl);
       this.setIframeUrl();
