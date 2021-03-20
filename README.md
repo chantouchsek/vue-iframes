@@ -19,7 +19,7 @@ Supports on Vue >= 2
 npm install vue-iframes
 ```
 ```yarn
-yarn vue-iframes
+yarn add vue-iframes
 ```
 
 ```javascript
