@@ -28,7 +28,8 @@ export default [
   {
     input: 'src/index.js',
     output: {
-      format: 'iife',
+      name: 'vue-iframes',
+      format: 'umd',
       file: 'dist/vue-iframes.js'
     },
     plugins: [
