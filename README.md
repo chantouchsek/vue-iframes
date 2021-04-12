@@ -20,7 +20,7 @@ npm install vue-iframes
 ```
 
 ```yarn
-yar add vue-iframes
+yarn add vue-iframes
 ```
 
 ```javascript
