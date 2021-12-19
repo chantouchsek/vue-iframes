@@ -1,11 +1,7 @@
-<template>
-    <div class="vue-iframe"/>
-</template>
-
 <script>
-  import { v4 as uuidV4 } from 'uuid';
+  import { uuid } from 'uuidv4';
   import debounce from 'lodash.debounce';
-  const generateGuid = () => uuidV4()
+  const generateGuid = () => uuid()
   export default {
     name: 'VueIframe',
     props: {
@@ -86,7 +82,6 @@
         this.iframeEl.setAttribute('id', this.frameId)
         if (this.src) this.iframeEl.setAttribute('iframe-src', this.src);
         if (this.className) this.iframeEl.setAttribute('class', this.className);
-        if (this.class) this.iframeEl.setAttribute('class', this.class);
         if (this.crossorigin) this.iframeEl.setAttribute('crossorigin', this.crossorigin);
         if (this.target) this.iframeEl.setAttribute('target', this.target);
         if (this.allow) this.iframeEl.setAttribute('allow', this.allow);
@@ -122,6 +117,13 @@
       src () {
         this.reinitIframe();
       }
+    },
+    render(createElement) {
+      return createElement('div', {
+        attrs: {
+          class: 'vue-iframe',
+        }
+      })
     }
   };
 </script>

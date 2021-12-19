@@ -1,4 +1,4 @@
-import VueIframe from './components/Iframe/index.vue';
+import VueIframe from './components/vue-iframe.vue';
 
 // expose component and service to global scope
 if (typeof window !== 'undefined' && window.Vue) {

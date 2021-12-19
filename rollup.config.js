@@ -8,10 +8,8 @@ export default [
       format: 'esm',
       file: 'dist/vue-iframes.esm.js'
     },
-    external: ['lodash.debounce', 'uuid', 'vue'],
-    plugins: [
-      vue()
-    ]
+    external: ['lodash.debounce', 'uuidv4', 'vue'],
+    plugins: [vue()]
   },
   // SSR build.
   {
@@ -32,8 +30,6 @@ export default [
       format: 'umd',
       file: 'dist/vue-iframes.js'
     },
-    plugins: [
-      vue()
-    ]
+    plugins: [vue()]
   }
 ]

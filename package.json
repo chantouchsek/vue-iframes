@@ -3,7 +3,10 @@
   "version": "0.0.16",
   "description": "Vue component for creating dynamic async iframes",
   "main": "dist/vue-iframes.js",
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "nuxt"
+  ],
   "scripts": {
     "dev": "NODE_ENV=development webpack-dev-server --config ./build/webpack.dev.js --open --inline --hot",
     "build:debug": "NODE_ENV=debug webpack --config build/webpack.dist.js",
@@ -34,7 +37,7 @@
   "homepage": "https://github.com/Chantouch/vue-iframes#readme",
   "dependencies": {
     "lodash.debounce": "^4.0.8",
-    "uuid": "7.0.1"
+    "uuidv4": "^6.2.12"
   },
   "peerDependecies": {
     "vue": "^2.5.16"
