@@ -14,7 +14,9 @@
     "build:docs": "webpack --config build/webpack.docs.js",
     "build": "rollup -c",
     "clean": "rimraf ./dist ./docs/docs.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "standard-version && git push --follow-tags origin main && yarn publish",
+    "prepublish": "yarn build"
   },
   "repository": {
     "type": "git",
@@ -69,6 +71,7 @@
     "rollup": "^2.19.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-vue": "^5.1.6",
+    "standard-version": "^9.3.2",
     "style-loader": "^0.21.0",
     "vue": "^2.6.11",
     "vue-loader": "^11.3.3",
