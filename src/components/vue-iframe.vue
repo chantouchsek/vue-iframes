@@ -50,21 +50,24 @@
         }
       },
       setIframeUrl () {
-        const iframeDoc = this.iframeEl.contentWindow.document;
-        iframeDoc.open()
-          .write(
-            `
-          <body onload="window.location.href='${this.src}'; parent.postMessage('${this.iframeLoadedMessage}', '*')"></body>
-          <script>
-            window.document.onreadystatechange = function () {
-              if (window.document.readyState === 'complete') {
-                parent.postMessage('${this.iframeOnReadyStateChangeMessage}', '*')
-              }
-            };
-          <\/script>
-          `
-          );
-        iframeDoc.close(); //iframe onload event happens
+        if(!this.iframeEl.contentWindow) {
+          this.initIframe()
+        }
+        this.$nextTick(() => {
+          const iframeDoc = this.iframeEl.contentWindow.document;
+          iframeDoc.open()
+              .write(`
+              <body onload="window.location.href='${this.src}'; parent.postMessage('${this.iframeLoadedMessage}', '*')"></body>
+              <script>
+                window.document.onreadystatechange = function () {
+                  if (window.document.readyState === 'complete') {
+                    parent.postMessage('${this.iframeOnReadyStateChangeMessage}', '*')
+                  }
+                };
+              <\/script>
+              `);
+          iframeDoc.close(); //iframe onload event happens
+        })
       },
       reinitIframe: debounce(function () {
         this.removeIframe();
@@ -105,13 +108,16 @@
         }, false);
       }
     },
-    mounted () {
+    created () {
       this.listenForEvents();
       this.initIframe();
     },
     watch: {
-      src () {
-        this.reinitIframe();
+      src: {
+        immediate: true,
+        handler() {
+          this.reinitIframe();
+        }
       }
     },
     render(createElement) {
