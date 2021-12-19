@@ -67,6 +67,16 @@ plugins: [
 ]
 ```
 
+Or another short way
+
+```js
+export default {
+    ...
+    modules: ['vue-iframes/nuxt']
+    ...
+}
+```
+
 ## Components
 ```vue
 <template>
