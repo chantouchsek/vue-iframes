@@ -23,17 +23,14 @@
       },
       allow: {
         type: String,
-        required: false,
         default: 'camera *; geolocation *; microphone *; autoplay *'
       },
       name: {
         type: String,
-        required: false,
         default: 'vue-iframes'
       },
       frameId: {
         type: String,
-        required: false,
         default: 'vue-iframes'
       },
       scrolling: String,
