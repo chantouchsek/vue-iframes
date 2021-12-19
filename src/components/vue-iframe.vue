@@ -1,7 +1,6 @@
 <script>
-  import { uuid } from 'uuidv4';
+  import { v4 } from 'uuid';
   import debounce from 'lodash.debounce';
-  const generateGuid = () => uuid()
   export default {
     name: 'VueIframe',
     props: {
@@ -40,8 +39,8 @@
     data () {
       return {
         iframeEl: {},
-        iframeLoadedMessage: `IFRAME_LOADED_${generateGuid()}`,
-        iframeOnReadyStateChangeMessage: `IFRAME_ON_READ_STATE_CHANGE_${generateGuid()}`
+        iframeLoadedMessage: `IFRAME_LOADED_${v4()}`,
+        iframeOnReadyStateChangeMessage: `IFRAME_ON_READ_STATE_CHANGE_${v4()}`
       };
     },
     methods: {
