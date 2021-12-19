@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.18](https://github.com/chantouchsek/vue-iframes/compare/v0.0.17...v0.0.18) (2021-12-19)
+
+
+### Bug Fixes
+
+* :book: update reamde ([78639f9](https://github.com/chantouchsek/vue-iframes/commit/78639f91b5ff856976108e35e7cd8b2c6070d2cb))
+* use uuid ([1458c81](https://github.com/chantouchsek/vue-iframes/commit/1458c81eac800eb0db61ac7e2241ad3d6d19e332))
+
 ### [0.0.17](https://github.com/chantouchsek/vue-iframes/compare/v0.0.16...v0.0.17) (2021-12-19)
 
 
