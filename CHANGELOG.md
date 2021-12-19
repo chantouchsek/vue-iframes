@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.19](https://github.com/chantouchsek/vue-iframes/compare/v0.0.18...v0.0.19) (2021-12-19)
+
+
+### Bug Fixes
+
+* fixed can not read property of null ([ea7d09a](https://github.com/chantouchsek/vue-iframes/commit/ea7d09a290837ce3458fc7a52d8ed3b0378872d7))
+
 ### [0.0.18](https://github.com/chantouchsek/vue-iframes/compare/v0.0.17...v0.0.18) (2021-12-19)
 
 
