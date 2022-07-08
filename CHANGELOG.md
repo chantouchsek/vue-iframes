@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.20](https://github.com/chantouchsek/vue-iframes/compare/v0.0.19...v0.0.20) (2022-07-08)
+
+
+### Bug Fixes
+
+* :fire: move render to template ([375c110](https://github.com/chantouchsek/vue-iframes/commit/375c110952136cd281f63e9307f22442a4ae7f1d))
+* **deps:** bump actions/stale from 4 to 5 ([07bca89](https://github.com/chantouchsek/vue-iframes/commit/07bca8967b52221b21fc4f4c27cd80b0d4c05661))
+* **deps:** bump async from 2.6.3 to 2.6.4 ([25b4c83](https://github.com/chantouchsek/vue-iframes/commit/25b4c837565951d4ef95db5e40f35b8d0ef0428b))
+* **deps:** bump eventsource from 1.0.7 to 1.1.1 ([e6c9460](https://github.com/chantouchsek/vue-iframes/commit/e6c9460c3536ff61be59000ee687d83435fcda5b))
+
 ### [0.0.19](https://github.com/chantouchsek/vue-iframes/compare/v0.0.18...v0.0.19) (2021-12-19)
 
 
