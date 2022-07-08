@@ -1,3 +1,6 @@
+<template>
+  <div class="vue-iframe" />
+</template>
 <script>
   import { v4 } from 'uuid';
   import debounce from 'lodash.debounce';
@@ -120,13 +123,6 @@
         }
       }
     },
-    render(createElement) {
-      return createElement('div', {
-        attrs: {
-          class: 'vue-iframe',
-        }
-      })
-    }
   };
 </script>
 
