@@ -110,7 +110,7 @@
         }, false);
       }
     },
-    created () {
+    mounted () {
       this.listenForEvents();
       this.initIframe();
     },
