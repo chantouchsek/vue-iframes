@@ -79,9 +79,8 @@
       initIframe () {
         this.iframeEl = document.createElement('iframe');
         this.iframeEl.setAttribute('style', 'visibility: hidden; position: absolute; top: -99999px; border: none;');
-        this.iframeEl.setAttribute('id', this.frameId)
-        this.iframeEl.setAttribute('frameborder', 0)
-        this.iframeEl.setAttribute('id', this.frameId)
+        this.iframeEl.setAttribute('id', this.frameId);
+        this.iframeEl.setAttribute('frameborder', 0);
         if (this.src) this.iframeEl.setAttribute('iframe-src', this.src);
         if (this.className) this.iframeEl.setAttribute('class', this.className);
         if (this.crossorigin) this.iframeEl.setAttribute('crossorigin', this.crossorigin);
