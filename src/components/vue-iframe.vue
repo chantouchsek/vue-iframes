@@ -4,6 +4,7 @@
 <script>
   import { v4 } from 'uuid';
   import debounce from 'lodash.debounce';
+
   export default {
     name: 'VueIframe',
     props: {
