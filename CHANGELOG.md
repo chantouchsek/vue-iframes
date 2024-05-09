@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.21](https://github.com/chantouchsek/vue-iframes/compare/v0.0.20...v0.0.21) (2024-05-09)
+
+
+### Features
+
+* :tada: bump deps ([f955ef7](https://github.com/chantouchsek/vue-iframes/commit/f955ef7edaa595170e7e841a2d62382faa8f430b))
+
+
+### Bug Fixes
+
+* **deps:** bump actions/stale from 5 to 6 ([a4d6299](https://github.com/chantouchsek/vue-iframes/commit/a4d62990199a0e8cd21dc095fd1112888a2c646f))
+* **deps:** bump actions/stale from 6 to 8 ([54a1a85](https://github.com/chantouchsek/vue-iframes/commit/54a1a857e38e412370a2df75fefd967c842f3580))
+* **deps:** bump decode-uri-component from 0.2.0 to 0.2.2 ([0dc852e](https://github.com/chantouchsek/vue-iframes/commit/0dc852ecfc0c59a8a39962fb6182e21e5a709f9a))
+* **deps:** bump express from 4.17.1 to 4.18.2 ([84f9089](https://github.com/chantouchsek/vue-iframes/commit/84f9089a379879fbd5c43ca996d100fd5e9fb264))
+* **deps:** bump express from 4.18.2 to 4.19.2 ([034f27f](https://github.com/chantouchsek/vue-iframes/commit/034f27fe76988ee5368127be8f41759a00517bed))
+* **deps:** bump follow-redirects from 1.13.3 to 1.15.6 ([7b0ff77](https://github.com/chantouchsek/vue-iframes/commit/7b0ff775f2c9059a4a3c8fc296e4a123e08fcee9))
+* **deps:** bump ip from 1.1.5 to 1.1.9 ([098b8b9](https://github.com/chantouchsek/vue-iframes/commit/098b8b94867c40631b5cf82d5c1d628a572bd42e))
+* **deps:** bump minimatch from 3.0.4 to 3.1.2 ([a252517](https://github.com/chantouchsek/vue-iframes/commit/a252517602c1cf2805ceb148d3e1003a91e067f9))
+
 ### [0.0.20](https://github.com/chantouchsek/vue-iframes/compare/v0.0.19...v0.0.20) (2022-07-08)
 
 
