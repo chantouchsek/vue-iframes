@@ -39,7 +39,7 @@
   "homepage": "https://github.com/chantouchsek/vue-iframes#readme",
   "dependencies": {
     "lodash.debounce": "^4.0.8",
-    "uuid": "^8.3.2"
+    "uuid": "^10.0.0"
   },
   "peerDependecies": {
     "vue": "^2.5.16"
