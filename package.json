@@ -70,7 +70,7 @@
     "mocha": "^10.4.0",
     "promise-polyfill": "^8.3.0",
     "rimraf": "^3.0.2",
-    "rollup": "^2.79.1",
+    "rollup": "^4.21.1",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-vue": "^5.1.9",
     "standard-version": "^9.5.0",
