@@ -74,7 +74,7 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-vue": "^5.1.9",
     "standard-version": "^9.5.0",
-    "style-loader": "^0.21.0",
+    "style-loader": "^0.23.1",
     "vue": "^2.7.16",
     "vue-loader": "^11.3.4",
     "vue-router": "^3.6.5",
