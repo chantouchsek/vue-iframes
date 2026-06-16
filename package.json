@@ -76,7 +76,7 @@
     "standard-version": "^9.5.0",
     "style-loader": "^0.21.0",
     "vue": "^2.7.16",
-    "vue-loader": "^11.3.4",
+    "vue-loader": "^16.3.1",
     "vue-router": "^3.6.5",
     "vue-style-loader": "^3.1.2",
     "vue-template-compiler": "^2.7.16",
